@@ -1,0 +1,191 @@
+.pageWrap{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+#logo{
+    color: #ffffff;
+    margin-bottom: 0;
+    text-align: center;
+}
+.wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.navDivider{
+    height: 40px;
+    float: left;
+    margin: 12px 0;
+}
+.mdMenu{
+    float: left;
+    background: none;
+    line-height: 62px;
+    margin-left: 30px;
+    border-bottom: none !important;
+}
+.mdMenu a{
+    color: #ffffff !important;
+}
+.mdMenu  .ant-menu-item-selected a{
+    color: #1890ff !important;
+}
+
+.navMenu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+}
+.xsMenu{
+    text-align: right;
+}
+.footer{
+    text-align: center;
+}
+.main{
+    flex: 1;
+}
+.main .wrap{
+    border: 1px solid #eeeeee;
+    border-top: none;
+}
+.indexMenu{
+    border-right: none;
+}
+.indexMenu .ant-menu-item-selected{
+    border-right:3px #1890ff solid ;
+}
+.indexMenu li{
+    text-align: center;
+}
+.indexMenu li:hover{
+    border-right:3px #1890ff solid ;
+    background:#e6f7ff;
+}
+
+.main .context{
+    min-height: 500px;
+    border-left:1px solid #eeeeee ;
+}
+@media all and (max-width: 767px) {
+    .indexMenu{
+        display: flex;
+        border-bottom: 1px solid #eeeeee;
+    }
+    .indexMenu .ant-menu-item-selected{
+        border: none;
+        border-bottom:3px #1890ff solid ;
+    }
+    .indexMenu li{
+        margin: 0px !important;
+        border: none;
+        flex: 1;
+    }
+    .indexMenu li:hover{
+        border: none;
+        border-bottom:3px #1890ff solid ;
+        background:#e6f7ff;
+    }
+    .main .context{
+        border-left:none ;
+    }
+
+
+}
+@media all and (max-width: 479px){
+    .main .ant-list-item-meta{
+        min-width:100%;
+        align-items: center;
+    }
+    .main .ant-list-item-action{
+        margin-left: 45px;
+    }
+    .main .ant-card-head-title{
+        white-space: normal;
+    }
+    .main .ant-card-head-title h1{
+        font-size: 22px;
+    }
+}
+
+.indexList{
+    padding: 0 10px;
+}
+.indexList p{
+    margin-bottom: 0;
+}
+.wrap .cardList{
+    margin: 20px 0;
+}
+.main .cardWrap{
+    border: none;
+}
+.main .cardWrap img{
+    max-width: 270px;
+    margin: 40px;
+}
+.detailsTitle{
+    display: flex;
+    align-items: center;
+}
+.detailsTitle >*{
+    margin: 0 5px;
+}
+.main .detailsWrap{
+    border: none;
+    margin: 20px auto;
+}
+.repliesList.ant-list-vertical .ant-list-item-meta-avatar{
+    display: block !important;
+}
+.repliesList.ant-list-vertical .repliesTitle>*{
+    margin: 0 4px;
+}
+
+.main .userAvatar{
+    width: 150px;
+    height: 150px;
+    border-radius:100%;
+    display: block;
+    margin: 20px auto;
+}
+.userWrap .userInfo{
+    text-align: center;
+    line-height: 24px;
+}
+.userListx {
+    line-height: 32px;
+}
+.userListx a{
+    margin: 0 10px;
+}
+.userListx .ant-list-item{
+    position: relative;
+}
+.userListx .ant-list-item *{
+    vertical-align: middle;
+}
+.userListx time{
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+.userListx h4{
+    display: inline-block;
+    margin: 0px;
+}
+.userListx  .ant-list-item-content{
+    display: block;
+}
+@media all and (max-width: 767px){
+    .userListx h4{
+        display: block;
+    }
+}
+.main img{
+    max-width:100%;
+}
+.main .ant-pagination {
+    padding-bottom: 30px;
+}
